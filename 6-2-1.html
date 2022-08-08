@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <script>    
+        Number.prototype.power = function(n=2)
+        {
+            return this.valueOf()**n
+        }
+
+        const a = 12
+        console.log('a.power() :', a.power())
+        console.log('a.power(3) :', a.power(3))
+        console.log('a.power(4) :', a.power(4))
+
+        String.prototype.contain = function(data)
+        {
+            return this.indexOf(data) >=0 
+        }
+
+        Array.prototype.contain = function(data)
+        {
+            return this.indexOf(data) >=0
+        }
+
+        const c = '안녕하세요'
+        console.log('안녕 in 안녕하세요', c.contain('안녕'))
+        console.log('없는데 in 안녕하세요', c.contain('없는데'))
+
+        const b = [255,213,324,5435,546,2,3423]
+        console.log('255 in b Array', b.contain(255))
+        console.log('0 in b Array', b.contain(0))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

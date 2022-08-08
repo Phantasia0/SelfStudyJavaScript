@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <script>    
+
+        const pet = 
+        {
+            name : '구름',
+            eat(food)
+            {
+                alert(this.name + food + "먹습니다")
+            }
+        }
+
+        pet.eat("밥")
+
+        const test = 
+        {
+            a: function()
+            {
+                console.log(this)
+            },
+
+            //특별한 이유가 있지 않는 이상 사용 X
+            b: ()=> 
+            {
+                console.log(this)
+            }
+        }
+
+        test.a()
+        test.b()
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
