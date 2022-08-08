@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <script>    
+        const max = function(first,...rests)
+        {
+            let output
+            let items
+
+            if(typeof(first)==='number')
+            {
+                output = first
+                items = rests   
+            }
+            else if(Array.isArray(first))
+            {
+                output = first[0]
+                items = first
+            }
+
+            for(const item of items)
+            {
+                if(output < item)
+                {
+                    output = item
+                }
+            }
+
+            return output
+
+        }
+
+        console.log(`${max([52,273,32,103,275,24,57])}`)
+        console.log(`${max(52,273,32,103,275,24,57)}`)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <script>    
+
+    function isLeapYear(year)
+    {
+        return ((year % 4 ===0) && (year % 100 !== 0) || (year % 400 ===0))
+    }
+
+    console.log(`2020 what? ===  ${isLeapYear(2020)}`)
+    console.log(`2010 what? ===  ${isLeapYear(2010)}`)
+    console.log(`2000 what? ===  ${isLeapYear(2000)}`)
+    console.log(`1900 what? ===  ${isLeapYear(1900)}`)
+
+    function sumAll(a,b)
+    {
+        let output = 0
+        for(let i=a; i<=b; i++)
+        {
+            output += i
+        }
+
+        return output
+    }
+
+    console.log(sumAll(1,100))
+    console.log(sumAll(1,500))
+
+    function min(array)
+    {
+        let output = array[0]
+
+        for(const item of array)
+        {
+            if(output>item)
+            {
+                output = item
+            }
+        }
+
+        return output
+    }
+
+    testArray = [52,323,423,567,435,567,87,12333]
+    console.log(min(testArray))
+
+    function sample(...items)
+    {
+        console.log(items)
+    }
+
+    sample(1,2)
+
+    
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

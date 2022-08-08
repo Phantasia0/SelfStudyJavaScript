@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <script>    
+
+    const todos = ['Milk', 'Mail', 'Class']
+
+    for(const i in todos)
+    {
+        console.log(`${i}번째 할 일: ${todos[i]}`)
+    }
+
+    for(const todo of todos)
+    {
+        console.log(`오늘의 할 일: ${todo}`)
+    }
+
+    let output =0
+    for(let i=1; i<=100; i++)
+    {
+        output +=i
+    }
+    console.log(`결과는 : ${output}`)
+
+    let i=0
+    while(confirm(`Continue?`))
+    {
+        alert(`${i} 번째 반복입니다`)
+        i = i+1
+    }
+
+
+    let output2 = ''
+
+    for(let i=1; i<10; i++)
+    {
+        for(let count = 1; count<i+1; count++)
+        {
+            console.log("*")
+            output2 += '*'
+        }
+        console.log("/n")
+        output2 += '/n'
+    }
+
+    console.log(output2)
+
+    
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
