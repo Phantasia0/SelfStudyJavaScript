@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <script>    
+        class Square
+        {
+            #length
+            static #counter =0
+            static get counter()
+            {
+                return Square.#counter
+            }
+
+            constructor(length)
+            {
+                this.length = length
+                Square.#counter +=1
+            }
+
+            static perimeterOf(length)
+            {
+                return length * 4
+            }
+
+            static areaOf(length)
+            {
+                return length*length
+            }
+
+            get length() { return this.#length}
+            
+
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
